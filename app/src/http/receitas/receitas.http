@@ -1,0 +1,25 @@
+@baseUrl = https://8080-otaviobonac-apiparap2ot-yazd3vissb3.ws-us114.gitpod.io
+
+GET http://localhost:8080/receitas
+Accept: application/json
+
+GET http://localhost:8080/receitas/{id}
+Accept: application/json
+
+POST http://localhost:8080/receitas
+Content-Type: application/json
+
+{
+  "nome": "Nome da Receita",
+  "instrucao": "Instruções da Receita"
+}
+
+PUT http://localhost:8080/receitas/{id}
+Content-Type: application/json
+
+{
+  "nome": "Nome da Receita Atualizada",
+  "instrucao": "Instruções da Receita Atualizada"
+}
+
+DELETE http://localhost:8080/receitas/{id}
